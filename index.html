@@ -1,22 +1,28 @@
 ---
 layout: default
+bg-img: /images/backgrounds/dice.jpg
 body-type: dice
 link-type: dice_link
+custom-navbar-top: custom-navbar-yellow
+custom-navbar-bottom: custom-navbar-yellow
 title: DiceRoller
 ---
-<div class="container">
-	<div class="blurb" id="dice">
-   		<h1>{{ page.title }}</h1>
-		<p>
-			<zero-md src="README.md">
-				<template>
-					<style>
-						h1{ display: none; }
-						p { color: white; }
-					</style>
-				</template>
-			</zero-md>
-			Check out the code <a class="{{ page.link-type }}" target="_blank" href="https://github.com/FDM320/DiceRoller">here</a>.
-		</p>
+
+<div class="container h-100">
+	<div class="d-flex align-items-center justify-content-center h-100 align">
+		<div class="d-flex flex-column text-center" id="dice">
+			<h1><strong>{{ page.title }}</strong></h1>
+			<h4>
+				<zero-md src="README.md">
+					<template>
+						<style>
+							h1{ display: none; }
+							h4 { color: white; }
+						</style>
+					</template>
+				</zero-md>
+				Check out the code <a class="{{ page.link-type }}" target="_blank" href="https://github.com/FDM320/DiceRoller">here</a>.
+			</h4>
+		</div>	
 	</div>
 </div>
